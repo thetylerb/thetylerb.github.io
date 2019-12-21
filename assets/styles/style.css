@@ -1,0 +1,157 @@
+/*
+The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element padding and border are included in the width and height: Both divs are the same size now! Hooray!
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ececec;
+}
+
+header {
+  margin-bottom: 20px;
+  height: 90px;
+  background-color: #464159;
+  overflow: auto;
+  border-bottom: 2px solid #dedede;
+}
+
+.logo {
+  float: left;
+  background-color: #8bbabb;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  width: 260px;
+  height: 88px;
+  padding: 22px 10px 0 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav {
+  float: right;
+  font-size: 18px;
+  padding: 34px 10px 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 2px 20px;
+  border-right: 1px solid #666;
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.main-container {
+  padding: 30px;
+  background-color: #fff;
+  height: calc(100vh - 210px);
+  border: 1px solid #dedede;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container h1 {
+  font-size: 22px;
+  color: #8bbabb;
+  padding: 10px 0;
+  border-bottom: 2px solid #dedede;
+}
+
+.main-container img {
+  width: 250px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.main-container p {
+  color: #777;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+main {
+  margin-bottom: 20px;
+  min-height: calc(100vh - 90px);;
+}
+
+footer {
+  position: fixed;
+  border-top: 6px solid #6c7b95;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 20px 0;
+  background-color: #464159;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {box-sizing:border-box}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #8bbabb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #8bbabb;
+}
+
+/* Add a background color and some padding around the form */
+.main-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
